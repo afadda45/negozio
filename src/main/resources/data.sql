@@ -1,0 +1,1 @@
+insert into customers (id, email, first_name, last_name) values (1, 'email@prova.com', 'provaNome', 'provaCognome');

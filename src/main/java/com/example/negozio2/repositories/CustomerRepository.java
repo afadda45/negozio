@@ -10,10 +10,6 @@ import java.util.Optional;
 @Repository
 public interface CustomerRepository extends JpaRepository<CustomerEntity, Long> {
 
-//    @Query(value = "SELECT * FROM customers WHERE id = ?1", nativeQuery = true)
-//    public Optional<CustomerEntity> findById(Long id);
-
     @Query(value = "SELECT * FROM customers WHERE email = ?1", nativeQuery = true)
-    public Optional<CustomerEntity> findByEmail(String email);
-
+    Optional<CustomerEntity> findByEmail(String email);
 }

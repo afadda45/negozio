@@ -3,7 +3,6 @@ package com.example.negozio2.service;
 import com.example.negozio2.exceptions.AlreadyRegisteredException;
 import com.example.negozio2.exceptions.GenericException;
 import com.example.negozio2.exceptions.NotFoundException;
-import com.example.negozio2.mapping.CustomerInsertMapper;
 import com.example.negozio2.mapping.CustomerMapper;
 import com.example.negozio2.pojo.dto.CustomerDto;
 import com.example.negozio2.pojo.entities.CustomerEntity;
@@ -50,5 +49,4 @@ public class CustomerService {
         customerRepository.delete(customerEntity);
         return "Cliente eliminato";
     }
-
 }
